@@ -1,17 +1,38 @@
-# This is a sample Python script.
+# from playsound import playsound
+# playsound("C:/Users/user/Desktop/yt1s.com.mp3")
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# import vlc
+# import time
+#
+# p = vlc.MediaPlayer("C:/Users/user/Desktop/yt1s.com.mp3")
+# p.play()
+# time.sleep(40)
 
+import webbrowser
+import requests
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+pageurl1 = input('Podaj pierwszy URL strony internetowej: ')
+date1 = input("Podaj date: ")
+pageurl2 = input('Podaj drugi URL strony internetowej: ')
+date2 = input("Podaj date: ")
+pageurl3 = input('Podaj trzeci URL strony internetowej: ')
+date3 = input("Podaj date: ")
 
+url1 ="http://archive.org/wayback/available?url="+pageurl1+"&timestamp="+str(date1)
+url2 ="http://archive.org/wayback/available?url="+pageurl2+"&timestamp="+str(date2)
+url3 ="http://archive.org/wayback/available?url="+pageurl3+"&timestamp="+str(date3)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-print_hi('PyCharm')
+response = requests.get(url1)
+d = response.json()
+page = d["archived_snapshots"]["closest"]["url"]
+webbrowser.open(page)
 
-# See PyCharm help ddddddat https://www.jetbrains.com/help/pycharm/
+response = requests.get(url2)
+d = response.json()
+page = d["archived_snapshots"]["closest"]["url"]
+webbrowser.open(page)
+
+response = requests.get(url3)
+d = response.json()
+page = d["archived_snapshots"]["closest"]["url"]
+webbrowser.open(page)
