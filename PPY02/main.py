@@ -1,3 +1,17 @@
+# a = float(input("Podaj pierwszą liczbę: "))
+# b = float(input("Podaj drugą liczbę: "))
+# c = input("Podaj operator: ")
+# if c == "+":
+#     print(a+b)
+# elif c == "-":
+#     print(a-b)
+# elif c == "*":
+#     print(a*b)
+# elif c == "/":
+#     print(a/b)
+# else:
+#     print("błędny operator")
+
 
 
 # print("ANKIETA")
