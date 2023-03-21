@@ -1,16 +1,32 @@
-# a = float(input("Podaj pierwszą liczbę: "))
-# b = float(input("Podaj drugą liczbę: "))
-# c = input("Podaj operator: ")
-# if c == "+":
-#     print(a+b)
-# elif c == "-":
-#     print(a-b)
-# elif c == "*":
-#     print(a*b)
-# elif c == "/":
-#     print(a/b)
-# else:
-#     print("błędny operator")
+# string1 = " Python 2023"
+# string2 = " Python 2023"
+# string3 = string2
+#
+# print(string1 == string2)  # True
+# print(string2 == string3)  # True
+#
+# print(type(string1), hex(id(string1)))  # <class 'str'> 0x7f901f18e0b0
+# print(type(string2), hex(id(string2)))  # <class 'str'> 0x7f901f18e0b0
+# print(type(string3), hex(id(string3)))  # <class 'str'> 0x7f901f18e0b0
+#
+# string4 = "Java 11"
+#
+# print(type(string4), hex(id(string4)))  # <class 'str'> 0x7f901f160150
+
+
+a = float(input("Podaj pierwszą liczbę: "))
+b = float(input("Podaj drugą liczbę: "))
+c = input("Podaj operator: ")
+if c == "+":
+    print(a+b)
+elif c == "-":
+    print(a-b)
+elif c == "*":
+    print(a*b)
+elif c == "/":
+    print(a/b)
+else:
+    print("błędny operator")
 
 
 
