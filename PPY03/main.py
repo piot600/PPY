@@ -1,16 +1,27 @@
-# This is a sample Python script.
+# ZAD1
+# numbers = input("Podaj liczby oddzielone przecinkami: ")
+# numbers_list = numbers.split(",")
+# mini = int(numbers_list[0])
+# maxi = int(numbers_list[0])
+#
+# for i in numbers_list:
+#     if int(i) > maxi:
+#         maxi = int(i)
+#     if int(i) < mini:
+#         mini = int(i)
+#
+# print("max : " + str(maxi))
+# print("min : " + str(mini))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# ZAD2
+# import random
+#
+# cities = ["Warszawa", "Kraków", "Wrocław", "Łódź", "Poznań", "Gdańsk", "Szczecin", "Bydgoszcz", "Lublin", "Białystok"]
+# mix_cities = []
+# for i in range(len(cities)):
+#     tmp = random.randint(0, len(cities) - 1)
+#     mix_cities.append(cities[tmp])
+#     cities.remove(cities[tmp])
+#
+# print(mix_cities)
