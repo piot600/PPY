@@ -37,10 +37,25 @@
 # numbers = input("Wprowadz liczby oddzielone spacja: ")
 # isPrime2(*numbers.split())
 
-#def caesar_cipher(message, key, alphabet=[]):
 
-#message = input("podaj wiadomosc")
+# ord()
+# chr()
 
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
-            'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+def cezar(message, shift, alphabet):
+    message = message.lower()
+    result = ""
+
+    for i in message:
+        if i in alphabet:
+            index = alphabet.index(i)
+            shifted_index = (index + shift) % len(alphabet)
+            result += alphabet[shifted_index]
+        else:
+            result += i
+    return result
+
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet_pol = "aąbcdeęfghijklmnoprstuwzźż"
+print(cezar("The Project Gutenberg eBook of Ali ce’s Adventures in Wonderland, by Lewis Carroll", 2, alphabet))
