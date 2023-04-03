@@ -41,21 +41,21 @@
 # ord()
 # chr()
 
-
-def cezar(message, shift, alphabet):
-    message = message.lower()
-    result = ""
-
-    for i in message:
-        if i in alphabet:
-            index = alphabet.index(i)
-            shifted_index = (index + shift) % len(alphabet)
-            result += alphabet[shifted_index]
-        else:
-            result += i
-    return result
-
-
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-alphabet_pol = "aąbcdeęfghijklmnoprstuwzźż"
-print(cezar("The Project Gutenberg eBook of Ali ce’s Adventures in Wonderland, by Lewis Carroll", 2, alphabet))
+#ZAD3
+# def cezar(message, shift, alphabet):
+#     message = message.lower()
+#     result = ""
+#
+#     for i in message:
+#         if i in alphabet:
+#             index = alphabet.index(i)
+#             shifted_index = (index + shift) % len(alphabet)
+#             result += alphabet[shifted_index]
+#         else:
+#             result += i
+#     return result
+#
+#
+# alphabet = "abcdefghijklmnopqrstuvwxyz"
+# alphabet_pol = "aąbcdeęfghijklmnoprstuwzźż"
+# print(cezar("The Project Gutenberg eBook of Ali ce’s Adventures in Wonderland, by Lewis Carroll", 2, alphabet))
